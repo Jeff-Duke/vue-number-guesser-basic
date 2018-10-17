@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.container {
+  max-width: 60vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 80vw;
+  }
+}
+
+.game-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  background-color: #404041;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.message .range {
+  color: #e6e7e8;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.message .title {
+  color: #ed458b;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.message .title  span {
+  color: #e6e7e8;
+  font-weight: 300;
+}
+
+.guess--output span {
+    font-size: 10rem;
+    color: #eb008b;
+    font-weight: 300;
+    display: block;
+    line-height: 9rem;
+  }
+
+.guess--output,
+.guess--result {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+.guess--result {
+  margin-top: 0.5rem;
+}
+
+.input {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+.input--guess {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+.input--range {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper--range {
+  justify-content: space-between;
+}
+
+.wrapper--range label ~ label {
+  margin-left: 0.5rem;
+}
+
+.wrapper--buttons {
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
+.wrapper--buttons .btn {
+  width: 40%;
+}
+
+
+@media screen and (min-width: 768px) {
+  justify-content: center;
+
+  label ~ label {
+    margin-left: 2rem;
+  }
+}
+
+.btn {
+  background-color: #929497;
+  border: none;
+  border-radius: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.btn:hover {
+  background-color: #eb008b;
+}
+
+.btn:disabled {
+  background-color: #d0d2d3;
+}
+
+.btn--reset {
+  margin-top: 4rem;
+}
